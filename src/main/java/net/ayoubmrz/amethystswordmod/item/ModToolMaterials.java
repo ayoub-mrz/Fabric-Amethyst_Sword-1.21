@@ -7,12 +7,12 @@ import net.minecraft.item.Items;
 import net.minecraft.item.ToolMaterial;
 import net.minecraft.recipe.Ingredient;
 import net.minecraft.registry.tag.TagKey;
-
 import java.util.function.Supplier;
 
 public enum ModToolMaterials implements ToolMaterial {
     AMETHYST_SHARD(ModTags.Blocks.INCORRECT_FOR_AMETHYST_TOOL,
             1200, 5.0F, 4.0F, 22, () -> Ingredient.ofItems(Items.AMETHYST_SHARD));
+
 
     private final TagKey<Block> inverseTag;
     private final int itemDurability;
